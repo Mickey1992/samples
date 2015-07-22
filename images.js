@@ -44,8 +44,8 @@ function leftMoveChange(div){
 	else {
 		addIndex = midIndex + 2;
 	}
-	div.removeChild(firstImg);
 	div.innerHTML = div.innerHTML.trim() + '<img src="images/1 ('+addIndex+').jpg" id="' + addIndex + '" />';
+	div.removeChild(firstImg);
 	div.style.left = parseInt(div.style.left) + frameWidth+"px";			
 }
 
